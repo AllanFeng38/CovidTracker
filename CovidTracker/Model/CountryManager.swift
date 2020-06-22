@@ -11,14 +11,13 @@ import Foundation
 
 struct CoinManager {
     
-    let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
-    let apiKey = "D5991F1A-4AFF-4508-A17F-D30258BC2C2A"
+
     
-    let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
+    let currencyArray = [ "World","USA","Spain","Russia","UK","Italy","Brazil","France","Germany","Turkey"]
     
     func getCoinPrice(for currency: String){
-        //add apikey to baseURL
-        let urlString = "\(baseURL)/\(currency)?apikey=\(apiKey)"
+        //create https url
+        let urlString = "https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search"
         if let url = URL(string: urlString){
             //create the session
             let session = URLSession(configuration: .default)
