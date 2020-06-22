@@ -13,7 +13,7 @@
 		F8DB7751249C5F2A00997E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB774F249C5F2A00997E07 /* Main.storyboard */; };
 		F8DB7756249C5F3000997E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB7754249C5F3000997E07 /* LaunchScreen.storyboard */; };
 		F8DB775E249C5FF300997E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DB775D249C5FF300997E07 /* Assets.xcassets */; };
-		F8DB7763249C607600997E07 /* coinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB7762249C607600997E07 /* coinManager.swift */; };
+		F8DB7763249C607600997E07 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB7762249C607600997E07 /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		F8DB7755249C5F3000997E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8DB7757249C5F3000997E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DB775D249C5FF300997E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Documents/ByteCoin-iOS13/ByteCoin/Assets.xcassets"; sourceTree = "<group>"; };
-		F8DB7762249C607600997E07 /* coinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinManager.swift; sourceTree = "<group>"; };
+		F8DB7762249C607600997E07 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		F8DB7761249C600500997E07 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8DB7762249C607600997E07 /* coinManager.swift */,
+				F8DB7762249C607600997E07 /* CoinManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DB7763249C607600997E07 /* coinManager.swift in Sources */,
+				F8DB7763249C607600997E07 /* CoinManager.swift in Sources */,
 				F8DB774E249C5F2A00997E07 /* ViewController.swift in Sources */,
 				F8DB774A249C5F2A00997E07 /* AppDelegate.swift in Sources */,
 				F8DB774C249C5F2A00997E07 /* SceneDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fc6-rx-INN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -96,9 +96,9 @@
                         <viewLayoutGuide key="safeArea" id="R1w-OW-K56"/>
                     </view>
                     <connections>
-                        <outlet property="bitcoinLabel" destination="V4M-QV-1nT" id="13b-kS-v2q"/>
-                        <outlet property="currencyLabel" destination="9CX-Af-afp" id="bna-zE-9Zg"/>
-                        <outlet property="currencyPicker" destination="TTl-EO-NF4" id="URJ-mI-8Kc"/>
+                        <outlet property="bitcoinLabel" destination="V4M-QV-1nT" id="Dh8-MG-WiP"/>
+                        <outlet property="currencyLabel" destination="9CX-Af-afp" id="Op6-P3-fmw"/>
+                        <outlet property="currencyPicker" destination="TTl-EO-NF4" id="H4P-pk-yZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeK-bt-ajT" sceneMemberID="firstResponder"/>
