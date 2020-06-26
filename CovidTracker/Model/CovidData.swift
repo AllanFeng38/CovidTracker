@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct CovidData: Decodable {
+    let total_cases: Int
+}

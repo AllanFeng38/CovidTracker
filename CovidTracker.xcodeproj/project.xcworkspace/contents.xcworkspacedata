@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CryptoTracker.xcodeproj">
+      location = "self:/Users/allanfeng/Desktop/developer/CryptoTracker/CovidTracker.xcodeproj">
    </FileRef>
 </Workspace>

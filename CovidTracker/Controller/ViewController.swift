@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    let coinManager = CoinManager()
+    let countryManager = CountryManager()
 
+    @IBOutlet weak var casesLabel: UILabel!
+    @IBOutlet weak var recoveredLabel: UILabel!
     
+    @IBOutlet weak var deathsLabel: UILabel!
     
-    @IBOutlet weak var bitcoinLabel: UIImageView!
-    @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
     
     
@@ -34,16 +35,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return coinManager.currencyArray.count
+        return countryManager.countryArray.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return coinManager.currencyArray[row]
+        return countryManager.countryArray[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let selectedCurrency = coinManager.currencyArray[row]
-        coinManager.getCoinPrice(for: selectedCurrency)
+        let selectedCountry = countryManager.countryArray[row]
+        countryManager.getCoinPrice(for: selectedCountry)
     }
 
 

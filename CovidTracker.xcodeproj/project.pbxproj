@@ -12,8 +12,9 @@
 		F8DB774E249C5F2A00997E07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB774D249C5F2A00997E07 /* ViewController.swift */; };
 		F8DB7751249C5F2A00997E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB774F249C5F2A00997E07 /* Main.storyboard */; };
 		F8DB7756249C5F3000997E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB7754249C5F3000997E07 /* LaunchScreen.storyboard */; };
-		F8DB775E249C5FF300997E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DB775D249C5FF300997E07 /* Assets.xcassets */; };
-		F8DB7763249C607600997E07 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB7762249C607600997E07 /* CoinManager.swift */; };
+		F8DB7763249C607600997E07 /* CountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB7762249C607600997E07 /* CountryManager.swift */; };
+		F8F808CC24A1608800CB58B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F808CB24A1608800CB58B7 /* Assets.xcassets */; };
+		F8F808D024A3AA0D00CB58B7 /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F808CF24A3AA0D00CB58B7 /* CovidData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		F8DB7750249C5F2A00997E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8DB7755249C5F3000997E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8DB7757249C5F3000997E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8DB775D249C5FF300997E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Documents/ByteCoin-iOS13/ByteCoin/Assets.xcassets"; sourceTree = "<group>"; };
-		F8DB7762249C607600997E07 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		F8DB7762249C607600997E07 /* CountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
+		F8F808CB24A1608800CB58B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/AppIcons (4)/Assets.xcassets"; sourceTree = "<group>"; };
+		F8F808CF24A3AA0D00CB58B7 /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,7 @@
 		F8DB773D249C5F2A00997E07 = {
 			isa = PBXGroup;
 			children = (
-				F8DB7748249C5F2A00997E07 /* CryptoTracker */,
+				F8DB7748249C5F2A00997E07 /* CovidTracker */,
 				F8DB7747249C5F2A00997E07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,19 +57,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F8DB7748249C5F2A00997E07 /* CryptoTracker */ = {
+		F8DB7748249C5F2A00997E07 /* CovidTracker */ = {
 			isa = PBXGroup;
 			children = (
 				F8DB7761249C600500997E07 /* Model */,
 				F8DB7760249C600100997E07 /* View */,
 				F8DB775F249C5FFA00997E07 /* Controller */,
-				F8DB775D249C5FF300997E07 /* Assets.xcassets */,
 				F8DB7749249C5F2A00997E07 /* AppDelegate.swift */,
 				F8DB774B249C5F2A00997E07 /* SceneDelegate.swift */,
+				F8F808CB24A1608800CB58B7 /* Assets.xcassets */,
 				F8DB7754249C5F3000997E07 /* LaunchScreen.storyboard */,
 				F8DB7757249C5F3000997E07 /* Info.plist */,
 			);
-			path = CryptoTracker;
+			path = CovidTracker;
 			sourceTree = "<group>";
 		};
 		F8DB775F249C5FFA00997E07 /* Controller */ = {
@@ -89,7 +91,8 @@
 		F8DB7761249C600500997E07 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8DB7762249C607600997E07 /* CoinManager.swift */,
+				F8DB7762249C607600997E07 /* CountryManager.swift */,
+				F8F808CF24A3AA0D00CB58B7 /* CovidData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8DB7745249C5F2A00997E07 /* CryptoTracker */ = {
+		F8DB7745249C5F2A00997E07 /* CovidTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8DB775A249C5F3000997E07 /* Build configuration list for PBXNativeTarget "CryptoTracker" */;
+			buildConfigurationList = F8DB775A249C5F3000997E07 /* Build configuration list for PBXNativeTarget "CovidTracker" */;
 			buildPhases = (
 				F8DB7742249C5F2A00997E07 /* Sources */,
 				F8DB7743249C5F2A00997E07 /* Frameworks */,
@@ -109,7 +112,7 @@
 			);
 			dependencies = (
 			);
-			name = CryptoTracker;
+			name = CovidTracker;
 			productName = CryptoTracker;
 			productReference = F8DB7746249C5F2A00997E07 /* CovidTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -129,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F8DB7741249C5F2A00997E07 /* Build configuration list for PBXProject "CryptoTracker" */;
+			buildConfigurationList = F8DB7741249C5F2A00997E07 /* Build configuration list for PBXProject "CovidTracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8DB7745249C5F2A00997E07 /* CryptoTracker */,
+				F8DB7745249C5F2A00997E07 /* CovidTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -153,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DB7756249C5F3000997E07 /* LaunchScreen.storyboard in Resources */,
-				F8DB775E249C5FF300997E07 /* Assets.xcassets in Resources */,
+				F8F808CC24A1608800CB58B7 /* Assets.xcassets in Resources */,
 				F8DB7751249C5F2A00997E07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DB7763249C607600997E07 /* CoinManager.swift in Sources */,
+				F8DB7763249C607600997E07 /* CountryManager.swift in Sources */,
+				F8F808D024A3AA0D00CB58B7 /* CovidData.swift in Sources */,
 				F8DB774E249C5F2A00997E07 /* ViewController.swift in Sources */,
 				F8DB774A249C5F2A00997E07 /* AppDelegate.swift in Sources */,
 				F8DB774C249C5F2A00997E07 /* SceneDelegate.swift in Sources */,
@@ -313,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_FILE = CovidTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CryptoTracker/Info.plist;
+				INFOPLIST_FILE = CovidTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8DB7741249C5F2A00997E07 /* Build configuration list for PBXProject "CryptoTracker" */ = {
+		F8DB7741249C5F2A00997E07 /* Build configuration list for PBXProject "CovidTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DB7758249C5F3000997E07 /* Debug */,
@@ -354,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8DB775A249C5F3000997E07 /* Build configuration list for PBXNativeTarget "CryptoTracker" */ = {
+		F8DB775A249C5F3000997E07 /* Build configuration list for PBXNativeTarget "CovidTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DB775B249C5F3000997E07 /* Debug */,

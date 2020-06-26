@@ -9,11 +9,11 @@
 import Foundation
 
 
-struct CoinManager {
+struct CountryManager {
     
 
     
-    let currencyArray = [ "World","USA","Spain","Russia","UK","Italy","Brazil","France","Germany","Turkey"]
+    let countryArray = [ "World","USA","Spain","Russia","UK","Italy","Brazil","France","Germany","Turkey"]
     
     func getCoinPrice(for currency: String){
         //create https url
@@ -33,6 +33,20 @@ struct CoinManager {
             //start the task to fetch data
             task.resume()
             
+        }
+    }
+    
+    func parseJSON(_ data: Data) -> Int? {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(CovidData.self, from: data)
+            let lastCases = decodedData.total_cases
+            print(lastCases)
+            return lastCases
+            
+        } catch {
+            print(error)
+            return nil
         }
     }
 
